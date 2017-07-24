@@ -3,9 +3,8 @@ import csv
 import os
 
 products = []
-my_path = os.path.abspath(os.path.dirname(__file__))
-csv_file_path = os.path.join(my_path, "../data/products.csv")
-#code.interact(local=locals())
+csv_file_path = "data/products.csv"
+#code.interact(local=locals()
 #csv_file_path = "/Users/sanketwagle/Desktop/CurdAppClone/data/products.csv"
 with open(csv_file_path, "r") as csv_file:
     reader = csv.DictReader(csv_file)
